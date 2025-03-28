@@ -3,7 +3,7 @@
 A simple, top-down 2D-style car dodging game built with Three.js and HTML/JavaScript. Avoid oncoming traffic, collect coins, and see how high you can score as the game gets progressively faster!
 
 <!-- Add a GIF or screenshot of the gameplay here! -->
-![Gameplay Screenshot](placeholder.png)
+![Gameplay video](game.mp4)
 *(Replace placeholder.png with a link to your actual screenshot/GIF)*
 
 ## Features
