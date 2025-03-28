@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple 2D Car Racer - Three.js</title>
+    <style>
+        body { margin: 0; overflow: hidden; background-color: #222; }
+        canvas { display: block; }
+        #ui-container {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: white;
+            font-family: sans-serif;
+            background-color: rgba(0,0,0,0.5);
+            padding: 10px;
+            border-radius: 5px;
+            min-width: 150px;
+        }
+        #score { font-size: 1.2em; margin-bottom: 5px; }
+        #instructions { font-size: 0.9em; margin-bottom: 10px; }
+        #game-over {
+            font-size: 1.5em;
+            color: red;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 10px; /* Add margin */
+            display: none;
+        }
+        #restart-button {
+            display: none; /* Hidden initially */
+            padding: 8px 15px;
+            font-size: 1em;
+            cursor: pointer;
+            background-color: #4CAF50; /* Green */
+            color: white;
+            border: none;
+            border-radius: 4px;
+            margin: 5px auto 0; /* Center horizontally with margin */
+            display: none; /* Start hidden */
+            text-align: center; /* Ensure text is centered */
+            /* Make it block to allow margin auto centering */
+            display: block;
+            width: fit-content; /* Adjust width to content */
+        }
+        #restart-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div id="ui-container">
+        <div id="score">Score: 0</div>
+        <div id="instructions">Use Arrow Keys/WASD to drive<br>Collect Coins!</div>
+        <div id="game-over">GAME OVER!</div>
+        <button id="restart-button">Restart</button> <!-- Added Button -->
+    </div>
+
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js"
+            }
+        }
+    </script>
+    <script type="module" src="game.js"></script>
+</body>
+</html>
